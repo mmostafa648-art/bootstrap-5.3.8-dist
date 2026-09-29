@@ -1,0 +1,731 @@
+/* ==========================================================================
+   FLORA BEAUTY CENTER & SPA | HEBA AYOUB MAKEUP ARTIST - ALEXANDRIA
+   تصميم بناتي راقي، عصري وجذاب للبنات والعرائس بالإسكندرية
+   الألوان: روز جولد ناعم (Blush Pink / Rose Gold)، عاجي كريمي، وشامبين راقي
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;500;600;700;800;900&family=Cairo:wght@400;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,800;1,600&display=swap');
+
+:root {
+  --bg-body: #FDF9F9;
+  --bg-card: #FFFFFF;
+  --bg-warm-pink: #FFF1F3;
+  --bg-subtle-rose: #FDF4F5;
+  --bg-ivory-light: #FFFBFB;
+  
+  --text-main: #231B1E;
+  --text-secondary: #584A4E;
+  --text-muted: #8E7A80;
+  
+  /* ألوان بناتية جذابة وراقية */
+  --primary-pink: #E05672;
+  --primary-pink-dark: #C43B57;
+  --primary-pink-light: #FFE4E8;
+  --primary-rose-gold: #D2828E;
+  
+  --accent-gold: #C29656;
+  --accent-gold-light: #FBF4EB;
+  --accent-whatsapp: #25D366;
+  
+  --border-light: #F4E4E7;
+  --border-card: #F7E9EC;
+  --border-pink-glow: rgba(224, 86, 114, 0.35);
+  
+  --font-heading: 'Alexandria', 'Cairo', -apple-system, sans-serif;
+  --font-body: 'Cairo', 'Alexandria', -apple-system, sans-serif;
+  --font-latin: 'Playfair Display', serif;
+  
+  --shadow-sm: 0 4px 16px rgba(224, 86, 114, 0.06);
+  --shadow-md: 0 10px 30px rgba(224, 86, 114, 0.1);
+  --shadow-lg: 0 18px 45px rgba(224, 86, 114, 0.15);
+  
+  --transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 85px;
+}
+
+body {
+  direction: rtl;
+  text-align: right;
+  background-color: var(--bg-body);
+  color: var(--text-main);
+  font-family: var(--font-body);
+  line-height: 1.8;
+  overflow-x: hidden;
+  font-size: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--text-main);
+  letter-spacing: -0.01em;
+}
+
+p {
+  color: var(--text-secondary);
+  font-size: 1.02rem;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--primary-pink);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--primary-pink-dark);
+}
+
+/* Background Sections */
+.bg-warm-section {
+  background-color: var(--bg-warm-pink);
+}
+
+.bg-subtle-section {
+  background-color: var(--bg-subtle-rose);
+}
+
+/* Header & Top Bar */
+.top-notice-bar {
+  background: linear-gradient(90deg, #2D1B22 0%, #3F1F2A 100%);
+  color: #FCE7EB;
+  font-size: 0.85rem;
+  padding: 8px 0;
+}
+
+.top-notice-bar a {
+  color: #FFD5DE;
+}
+
+.navbar-flora {
+  background: rgba(255, 255, 255, 0.97);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border-light);
+  box-shadow: 0 4px 20px rgba(224, 86, 114, 0.05);
+  transition: var(--transition);
+}
+
+.brand-badge-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #FFE4E8 0%, #FDD2D9 100%);
+  color: var(--primary-pink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  box-shadow: 0 4px 12px rgba(224, 86, 114, 0.2);
+}
+
+.navbar-brand-title {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 1.4rem;
+  color: var(--text-main);
+  line-height: 1.1;
+}
+
+.brand-heba-bold {
+  font-family: var(--font-heading);
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  color: var(--primary-pink);
+  font-size: 0.88rem;
+  text-transform: uppercase;
+  display: block;
+}
+
+.nav-link-flora {
+  color: var(--text-main) !important;
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 8px 14px !important;
+  border-radius: 8px;
+  transition: var(--transition);
+}
+
+.nav-link-flora:hover, .nav-link-flora.active {
+  color: var(--primary-pink) !important;
+  background-color: var(--primary-pink-light);
+}
+
+/* Girls-Aesthetic Buttons */
+.btn-flora-primary {
+  background: linear-gradient(135deg, #E05672 0%, #D83F5E 100%);
+  color: #FFFFFF !important;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 0.98rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  box-shadow: 0 6px 20px rgba(224, 86, 114, 0.35);
+  transition: var(--transition);
+}
+
+.btn-flora-primary:hover {
+  background: linear-gradient(135deg, #C93E5A 0%, #B82C47 100%);
+  box-shadow: 0 8px 25px rgba(224, 86, 114, 0.5);
+  transform: translateY(-2px);
+}
+
+.btn-flora-outline {
+  background-color: #FFFFFF;
+  color: var(--text-main) !important;
+  border: 1px solid var(--border-light);
+  padding: 12px 26px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 0.98rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: var(--transition);
+}
+
+.btn-flora-outline:hover {
+  background-color: var(--bg-warm-pink);
+  border-color: var(--primary-pink);
+  color: var(--primary-pink) !important;
+  transform: translateY(-2px);
+}
+
+.btn-flora-whatsapp {
+  background-color: #25D366;
+  color: #FFFFFF !important;
+  border: none;
+  padding: 12px 26px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 0.98rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  box-shadow: 0 6px 18px rgba(37, 211, 102, 0.3);
+  transition: var(--transition);
+}
+
+.btn-flora-whatsapp:hover {
+  background-color: #1EBE5D;
+  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.45);
+  transform: translateY(-2px);
+}
+
+/* Badge Pills */
+.badge-pill-girly {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 18px;
+  background: linear-gradient(135deg, #FFE7EC 0%, #FFDAE1 100%);
+  border: 1px solid rgba(224, 86, 114, 0.25);
+  color: var(--primary-pink-dark);
+  font-size: 0.85rem;
+  font-weight: 700;
+  border-radius: 50px;
+  margin-bottom: 1.25rem;
+  box-shadow: 0 2px 10px rgba(224, 86, 114, 0.12);
+}
+
+/* صندوق تنبيه ونصائح العروسة الهام */
+.bridal-alert-box {
+  background: linear-gradient(135deg, #FFF6F7 0%, #FFF0F2 100%);
+  border: 2px dashed #E05672;
+  border-radius: 18px;
+  padding: 24px 26px;
+  box-shadow: 0 8px 25px rgba(224, 86, 114, 0.1);
+  position: relative;
+}
+
+.bridal-alert-title {
+  color: var(--primary-pink-dark);
+  font-weight: 800;
+  font-size: 1.18rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+/* Hero Section */
+.hero-flora {
+  padding: 60px 0 50px 0;
+  position: relative;
+  overflow: hidden;
+  background: radial-gradient(circle at 10% 20%, #FFF5F6 0%, #FDF9F9 90%);
+}
+
+.hero-visual-card {
+  position: relative;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 16px 45px rgba(224, 86, 114, 0.18);
+  border: 5px solid #FFFFFF;
+}
+
+.hero-visual-card img {
+  width: 100%;
+  height: 530px;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-overlay-tag {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(35, 27, 30, 0.88);
+  backdrop-filter: blur(12px);
+  color: #FFFFFF;
+  padding: 14px 22px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  max-width: 90%;
+}
+
+/* Feature Boxes */
+.trust-feature-box {
+  background-color: #FFFFFF;
+  border: 1px solid var(--border-card);
+  border-radius: 18px;
+  padding: 26px 22px;
+  text-align: right;
+  transition: var(--transition);
+  height: 100%;
+}
+
+.trust-feature-box:hover {
+  border-color: var(--primary-pink);
+  box-shadow: var(--shadow-sm);
+  transform: translateY(-4px);
+}
+
+.trust-icon-wrap {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #FFE7EC 0%, #FFD4DD 100%);
+  color: var(--primary-pink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.45rem;
+  margin-bottom: 16px;
+}
+
+/* Heba Spotlight Box */
+.heba-spotlight-box {
+  background: linear-gradient(135deg, #FFFFFF 0%, #FFF5F7 100%);
+  border: 1.5px solid #F7DCE2;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+.heba-title-large {
+  font-family: var(--font-heading);
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: var(--text-main);
+  line-height: 1.3;
+}
+
+.heba-latin-subtitle {
+  font-family: var(--font-latin);
+  font-size: 1.4rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  color: var(--primary-pink);
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.quote-highlight {
+  border-right: 4px solid var(--primary-pink);
+  padding-right: 18px;
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  margin: 18px 0;
+  background: rgba(224, 86, 114, 0.03);
+  padding: 12px 18px;
+  border-radius: 8px 0 0 8px;
+}
+
+/* Bridal Step Card */
+.bridal-step-card {
+  position: relative;
+  background-color: #FFFFFF;
+  border: 1px solid var(--border-card);
+  border-radius: 18px;
+  padding: 28px 22px;
+  height: 100%;
+  transition: var(--transition);
+}
+
+.bridal-step-card:hover {
+  border-color: var(--primary-pink);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.step-number-badge {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #FFE7EC 0%, #FFD4DD 100%);
+  color: var(--primary-pink-dark);
+  font-weight: 800;
+  font-size: 1.15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+/* Bridal Packages (باكدجات العرائس) */
+.package-card-flora {
+  background-color: #FFFFFF;
+  border: 1px solid var(--border-card);
+  border-radius: 22px;
+  padding: 34px 26px;
+  position: relative;
+  transition: var(--transition);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.package-card-flora:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--primary-pink);
+  transform: translateY(-4px);
+}
+
+.package-card-flora.featured {
+  border: 2px solid var(--primary-pink);
+  background: linear-gradient(180deg, #FFFFFF 0%, #FFF8FA 100%);
+  box-shadow: var(--shadow-md);
+}
+
+.package-ribbon {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, #E05672 0%, #D83F5E 100%);
+  color: #FFFFFF;
+  padding: 4px 20px;
+  font-size: 0.8rem;
+  font-weight: 800;
+  border-radius: 50px;
+  letter-spacing: 0.03em;
+  box-shadow: 0 4px 12px rgba(224, 86, 114, 0.35);
+}
+
+.package-price-placeholder {
+  font-size: 0.92rem;
+  color: var(--primary-pink-dark);
+  background-color: var(--primary-pink-light);
+  padding: 6px 14px;
+  border-radius: 8px;
+  display: inline-block;
+  margin: 12px 0 16px 0;
+  font-weight: 700;
+}
+
+.package-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  flex-grow: 1;
+}
+
+.package-list li {
+  padding: 8px 0;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.package-list li i {
+  color: var(--primary-pink);
+  font-size: 1.1rem;
+  margin-top: 2px;
+}
+
+/* Service Tab Buttons */
+.services-tab-btn {
+  background-color: #FFFFFF;
+  border: 1px solid var(--border-light);
+  color: var(--text-main);
+  padding: 10px 22px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  transition: var(--transition);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.services-tab-btn:hover, .services-tab-btn.active {
+  background: linear-gradient(135deg, #E05672 0%, #D83F5E 100%);
+  color: #FFFFFF;
+  border-color: transparent;
+  box-shadow: 0 4px 15px rgba(224, 86, 114, 0.3);
+}
+
+.service-item-row {
+  background-color: #FFFFFF;
+  border: 1px solid var(--border-card);
+  border-radius: 16px;
+  padding: 22px;
+  transition: var(--transition);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-item-row:hover {
+  border-color: var(--primary-pink);
+  box-shadow: var(--shadow-sm);
+  transform: translateY(-3px);
+}
+
+/* Gallery & Lookbook */
+.gallery-tab-btn {
+  background-color: #FFFFFF;
+  border: 1px solid var(--border-light);
+  color: var(--text-secondary);
+  padding: 8px 20px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.gallery-tab-btn:hover, .gallery-tab-btn.active {
+  background-color: var(--text-main);
+  color: #FFFFFF;
+  border-color: var(--text-main);
+}
+
+.gallery-item-wrapper {
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-light);
+  background-color: #FFFFFF;
+  transition: var(--transition);
+  height: 100%;
+}
+
+.gallery-item-wrapper:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 35px rgba(224, 86, 114, 0.16);
+  border-color: var(--primary-pink);
+}
+
+.gallery-img-box {
+  height: 340px;
+  overflow: hidden;
+  position: relative;
+  background-color: var(--bg-warm-pink);
+}
+
+.gallery-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.gallery-item-wrapper:hover .gallery-img-box img {
+  transform: scale(1.06);
+}
+
+.gallery-caption {
+  padding: 16px 20px;
+}
+
+/* Testimonial Cards */
+.testimonial-card-flora {
+  background-color: #FFFFFF;
+  border: 1px solid var(--border-card);
+  border-radius: 18px;
+  padding: 26px;
+  box-shadow: var(--shadow-sm);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.stars-rating {
+  color: #F59E0B;
+  font-size: 0.95rem;
+  margin-bottom: 12px;
+}
+
+/* Accordion FAQ */
+.accordion-flora .accordion-item {
+  background-color: #FFFFFF;
+  border: 1px solid var(--border-card);
+  border-radius: 14px !important;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+.accordion-flora .accordion-button {
+  background-color: #FFFFFF;
+  color: var(--text-main);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.05rem;
+  padding: 18px 22px;
+  box-shadow: none;
+}
+
+.accordion-flora .accordion-button:not(.collapsed) {
+  background-color: var(--primary-pink-light);
+  color: var(--primary-pink-dark);
+}
+
+.accordion-flora .accordion-button::after {
+  margin-right: auto;
+  margin-left: 0;
+}
+
+/* Booking Form Card */
+.booking-form-card {
+  background-color: #FFFFFF;
+  border: 1px solid var(--border-card);
+  border-radius: 22px;
+  padding: 34px;
+  box-shadow: var(--shadow-md);
+}
+
+.form-control-flora, .form-select-flora {
+  background-color: var(--bg-subtle-rose);
+  border: 1px solid var(--border-light);
+  color: var(--text-main);
+  border-radius: 12px;
+  padding: 12px 16px;
+  font-size: 0.98rem;
+  transition: var(--transition);
+}
+
+.form-control-flora:focus, .form-select-flora:focus {
+  background-color: #FFFFFF;
+  border-color: var(--primary-pink);
+  box-shadow: 0 0 0 3px rgba(224, 86, 114, 0.2);
+  color: var(--text-main);
+}
+
+/* Info Item Flex */
+.info-item-flex {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.info-icon-box {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #FFE7EC 0%, #FFD4DD 100%);
+  color: var(--primary-pink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+/* Mobile Sticky Bottom CTA Bar */
+.mobile-sticky-cta {
+  display: none;
+}
+
+@media (max-width: 991.98px) {
+  .mobile-sticky-cta {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1040;
+    background: rgba(255, 255, 255, 0.97);
+    backdrop-filter: blur(14px);
+    border-top: 1px solid var(--border-light);
+    padding: 10px 14px;
+    box-shadow: 0 -4px 20px rgba(224, 86, 114, 0.12);
+    gap: 10px;
+  }
+  
+  .mobile-sticky-cta .btn {
+    flex: 1;
+    padding: 12px 14px;
+    font-size: 0.92rem;
+  }
+  
+  body {
+    padding-bottom: 70px;
+  }
+  
+  .hero-visual-card img {
+    height: 400px;
+  }
+}
+
+/* Footer */
+.footer-flora {
+  background: linear-gradient(180deg, #2D1B22 0%, #1F1217 100%);
+  color: #DDD0D4;
+  padding: 60px 0 30px 0;
+}
+
+.footer-flora a {
+  color: #CCC1B6;
+}
+
+.footer-flora a:hover {
+  color: #FFFFFF;
+}
+
+.footer-social-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF !important;
+  transition: var(--transition);
+}
+
+.footer-social-icon:hover {
+  background-color: var(--primary-pink);
+  transform: translateY(-2px);
+}
